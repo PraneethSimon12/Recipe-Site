@@ -31,8 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'accounts',
-    'home',
+    
     'vege',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -124,7 +123,7 @@ import os
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static_files','static')
+STATIC_ROOT = os.path.join(BASE_DIR,'static_files')
 
 STATICFILES_DIR = {
     os.path.join(BASE_DIR , "public/static")

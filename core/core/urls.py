@@ -16,7 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from home.views import *
 from vege.views import *
 from django.conf import settings
 from django.conf.urls.static import static
@@ -26,11 +25,10 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
-    path('',home,name='home'),
-    path('about/',about,name='about'),
-    path('contact/',contact,name='contact'),
+    
+    
     path('admin/', admin.site.urls),
-    path('recipe/',recipe,name='recipe'),
+    path('',recipe,name='recipe'),
     path('delete-recipe/<int:id>/',delete_recipe,name='delete_recipe'),
     path('update-recipe/<int:id>/',update_recipe,name='update_recipe'),
     path('login/',login_page,name='login_page'),
